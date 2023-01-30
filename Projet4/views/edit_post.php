@@ -5,35 +5,35 @@
 
 <body>
     <?php include("components/header.php") ?>
-    <section class="containers">
-        <section class="admincolumn1">
+    <div class="containers">
+        <div class="admincolumn1">
 
             <?php include("components/adminmenu.php") ?>
 
-        </section>
-        <section class="column2">
+        </div>
+        <div class="column2">
             <div class="Redaction">
-                <form class="NewArticle" method="POST" action="index.php?action=update-post">
 
-                    <h2>Editez votre Article</h2>
+
+                <form class="NewArticle" id="newArticle" method="POST" action="index.php?action=store-post">
+
+                    <h2>Votre nouvel article</h2>
                     <div class="Articlecontainer">
-                        <input type="hidden" name="id" value="<?php echo $singlePost['id']; ?>">
                         <label for="Title"><strong>Titre:</strong></label>
-                        <input type="hidden" name="date" value="<?php echo $singlePost['date']; ?>">
-                        <input type="text" placeholder="" name="titre" value="<?php echo $singlePost['titre']; ?>">
 
-
-                        <label for="message"><strong>Votre Article:</strong></label>
-
-                        <textarea name="message" rows=25 colls=150><?php echo $singlePost['message']; ?></textarea>
+                        <input type="text" placeholder="" name="Title" value=<?php $articleTitle ?>>
+                        <label for="Subject"><strong>Votre Article:</strong></label>
+                        <tinymce-editor api-key="0ki8kh44dpr0iupw97fjo8e0x3vrccw5i082axf6oco1elwv" name="Subject" value=<?php $articleText ?>>
+                            <!-- <textarea name="Subject" rows=25 cols=150 value=<?php $articleText ?>></textarea> -->
+                        </tinymce-editor>
                     </div>
 
                     <button type="submit">Publier</button>
                 </form>
 
             </div>
-        </section>
-    </section>
+        </div>
+    </div>
 
 </body>
 
