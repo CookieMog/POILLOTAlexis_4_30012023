@@ -24,11 +24,11 @@ function store_post()
         var_dump($Post);
 
         if ($res) {
-            header("Location: http://projet4/index.php?action=add-post");
+            header("Location: http://projet4git/index.php?action=add-post");
             $_SESSION['success'] = "Article Publié.";
         } else {
             $_SESSION['error'] = "Erreur lors de la publication.";
-            header("Location: http://projet4/index.php?action=admin");
+            header("Location: http://projet4git/index.php?action=admin");
         }
     }
 };
@@ -38,7 +38,7 @@ function edit_post()
     // On récupère l'ID du post
     $id = isset($_GET['id']) ? (int) $_GET['id'] : 0;
     if ($id == 0) {
-        header("Location: http://projet4/index.php?action=admin");
+        header("Location: http://projet4git/index.php?action=admin");
     }
 
     // On match le post et l'ID
@@ -68,10 +68,10 @@ function update_post()
 
         if ($res) {
             $_SESSION['success'] = "Modification enregistrée.";
-            header("Location: http://projet4/index.php?action=article&id=$id]");
+            header("Location: http://projet4git/index.php?action=article&id=$id]");
         } else {
             $_SESSION['error'] = "Un problème est survenu.";
-            header("Location: http://projet4/index.php?action=admin");
+            header("Location: http://projet4git/index.php?action=admin");
         }
     }
 };
@@ -81,7 +81,7 @@ function delete_post()
     $id = isset($_GET['id']) ? (int) $_GET['id'] : 0;
     //ERROR Si il y a pas d'id redirection vers dashboard
     if ($id == 0) {
-        header("Location: http://projet4/index.php?action=admin");
+        header("Location: http://projet4git/index.php?action=admin");
     }
     var_dump($id);
 
@@ -93,5 +93,5 @@ function delete_post()
     } else {
         $_SESSION['error'] = "Un problème est survenu.";
     }
-    header("Location: http://projet4/index.php?action=admin");
+    header("Location: http://projet4git/index.php?action=admin");
 };

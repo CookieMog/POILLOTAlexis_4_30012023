@@ -28,7 +28,7 @@ function pageConnect()
 
 
     if (isset($_SESSION['usermail'])) {
-        header("Location: http://projet4/index.php?action=admin");
+        header("Location: http://projet4git/index.php?action=admin");
     }
 
     // CheckAuth();
@@ -57,7 +57,7 @@ function article()
 {
     $id = isset($_GET['id']) ? (int) $_GET['id'] : 0;
     if ($id == 0) {
-        header("http://projet4/index.php?action=home.php");
+        header("http://projet4git/index.php?action=home.php");
         return;
     }
     $Post = new posts_model();
