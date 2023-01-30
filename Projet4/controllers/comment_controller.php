@@ -20,7 +20,7 @@ function store_comment()
         if (strlen($commentText) > 255) {
             $_SESSION['error'] = "Commentaire trop long.(255 caractère max.)";
             $id = $_POST['id'];
-            header("Location: http://projet4/index.php?action=add-comment&id=$id");
+            header("Location: http://projet4git/index.php?action=add-comment&id=$id");
             return;
         }
         $Comment = new comment_model();
@@ -35,7 +35,7 @@ function store_comment()
 
         $id = $_POST['id'];
 
-        header("Location: http://projet4/index.php?action=article&id=$id");
+        header("Location: http://projet4git/index.php?action=article&id=$id");
     }
 };
 
@@ -44,7 +44,7 @@ function delete_comment()
 
     $id = isset($_GET['id']) ? (int) $_GET['id'] : 0;
     if ($id == 0) {
-        header("Location: http://projet4/index.php?action=admin");
+        header("Location: http://projet4git/index.php?action=admin");
     }
 
 
@@ -53,9 +53,9 @@ function delete_comment()
 
     if ($res) {
         $_SESSION['success'] = "Commentaire Supprimé";
-        header("Location: http://projet4/index.php?action=moderation");
+        header("Location: http://projet4git/index.php?action=moderation");
     } else {
-        header("Location: http://projet4/index.php?action=admin");
+        header("Location: http://projet4git/index.php?action=admin");
         $_SESSION['error'] = "Un problème est survenu.";
     }
 }
@@ -76,5 +76,5 @@ function signal_comment()
     }
 
 
-    header("Location: http://projet4/index.php?action=article&id=$idPost");
+    header("Location: http://projet4git/index.php?action=article&id=$idPost");
 }
