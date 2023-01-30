@@ -8,7 +8,7 @@ function pageHome()
     // code
 
     // View
-    require("./views/home.php");
+    require("../views/home.php");
 }
 
 function pageAdmin()
