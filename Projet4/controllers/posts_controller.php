@@ -44,6 +44,7 @@ function edit_post()
     // On match le post et l'ID
     $Post = new posts_model();
     $singlePost = $Post->getOnePostById($id);
+
     //ERROR Si il y a pas d'post redirection vers dashboard
 
 

@@ -24,7 +24,7 @@
                         <input type="text" placeholder="" name="Title" value=<?php $articleTitle ?>>
                         <label for="Subject"><strong>Votre Article:</strong></label>
                         <tinymce-editor api-key="0ki8kh44dpr0iupw97fjo8e0x3vrccw5i082axf6oco1elwv" name="Subject" value=<?php echo $articleText ?>>
-                            <!-- <textarea name="Subject" rows=25 cols=150 value=<?php $articleText ?>></textarea> -->
+                            <!--  <textarea name="Subject" rows=25 cols=150 value=<?php echo $articleText ?>></textarea> -->
                         </tinymce-editor>
                     </div>
 
@@ -34,7 +34,14 @@
             </div>
         </div>
     </div>
-
+    <script>
+        tinymce.init({
+            selector: 'tinymce-editor',
+            setup: function(editor) {
+                editor.setContent('<?php echo $articleText; ?>');
+            }
+        });
+    </script>
 </body>
 
 </html>
