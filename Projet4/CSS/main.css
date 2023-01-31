@@ -828,6 +828,9 @@ form button:hover {
       opacity: 1;
     }
   }
+  .AdminMenu a {
+    min-width: 180px;
+  }
   .menu {
     right: 15%;
     left: unset;
