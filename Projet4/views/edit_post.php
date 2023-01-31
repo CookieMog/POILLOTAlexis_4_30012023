@@ -17,13 +17,13 @@
 
                 <form class="NewArticle" id="newArticle" method="POST" action="index.php?action=store-post">
 
-                    <h2>Votre nouvel article</h2>
+                    <h2>Editez votre article</h2>
                     <div class="Articlecontainer">
                         <label for="Title"><strong>Titre:</strong></label>
 
                         <input type="text" placeholder="" name="Title" value=<?php $articleTitle ?>>
                         <label for="Subject"><strong>Votre Article:</strong></label>
-                        <tinymce-editor api-key="0ki8kh44dpr0iupw97fjo8e0x3vrccw5i082axf6oco1elwv" name="Subject" value=<?php $articleText ?>>
+                        <tinymce-editor api-key="0ki8kh44dpr0iupw97fjo8e0x3vrccw5i082axf6oco1elwv" name="Subject" value=<?php echo $articleText ?>>
                             <!-- <textarea name="Subject" rows=25 cols=150 value=<?php $articleText ?>></textarea> -->
                         </tinymce-editor>
                     </div>

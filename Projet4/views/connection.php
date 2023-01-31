@@ -7,7 +7,7 @@
   <?php include("components/header.php") ?>
 
 
-  <section class="Formulaire">
+  <div class="Formulaire">
     <?php include("components/messages.php") ?>
     <form class="LoginForm" method="POST" action="index.php?action=traitement">
       <h1>Connectez-vous</h1>
@@ -28,5 +28,5 @@
         <span class="admin"><a href="index.php?action=admin"> Espace Administrateur </a></span>
       </div>
     </form>
-  </section>
+  </div>
 </body>

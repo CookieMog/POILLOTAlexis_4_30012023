@@ -7,8 +7,8 @@
     <?php include("components/header.php") ?>
     <?php include("components/messages.php") ?>
 
-    <section class="containers">
-        <section class="column1">
+    <div class="containers">
+        <div class="column1">
             <div class="Introduction">
                 <div class="Photo">
                     <img src="../images/JFroche.jpg" />
@@ -29,8 +29,8 @@
                 <i class="fa-brands fa-twitter fa-3x"></i><a href="#">JeanForterocheOF</a>
                 <i class="fa-brands fa-tumblr fa-3x"></i><a href="#">Jean Forteroche</a>
             </div>
-        </section>
-        <section class="column2">
+        </div>
+        <div class="column2">
 
 
             <div class="CommentForm">
@@ -44,17 +44,15 @@
                         <input type="text" placeholder="" name="Author" id="title" required>
 
                         <label for="subject"><strong>Votre Commentaire:</strong></label>
-                        <tinymce-editor api-key="0ki8kh44dpr0iupw97fjo8e0x3vrccw5i082axf6oco1elwv" name="Subject">
-
-                        </tinymce-editor>
+                        <textarea name="Subject" rows=5 cols=5></textarea>
                     </div>
                     <button type="submit" id="publishComment">Envoyer</button>
                 </form>
             </div>
 
-            </div>
-        </section>
-    </section>
+        </div>
+    </div>
+    </div>
 
     <script>
         let publishButton = document.getElementById('publishComment');

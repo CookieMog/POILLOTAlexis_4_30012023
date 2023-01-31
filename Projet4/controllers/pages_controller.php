@@ -8,7 +8,8 @@ function pageHome()
     // code
 
     // View
-    require("../views/home.php");
+    echo getcwd();
+    require("C:/wamp64/www/POILLOTAlexis_4_30012023/Projet4/views/home.php");
 }
 
 function pageAdmin()

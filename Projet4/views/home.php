@@ -5,7 +5,7 @@
 
 <body>
   <?php include("components/header.php") ?>
-  <section class="containers">
+  <div class="containers">
     <div class="column1">
       <div class="Introduction">
         <div class="Photo">
@@ -40,7 +40,7 @@
             <div class="ArticleDescription">
               <h2><a href="index.php?action=article&id=<?php echo $post['id']; ?>"><?php echo $post['titre']; ?></a></h2>
 
-              <p><?php echo substr_replace($post['message'], "...", 400); ?>
+              <p><?php echo substr_replace(strip_tags(htmlspecialchars_decode($post['message'])), "...", 400); ?>
               </p>
             </div>
           </div>
@@ -48,7 +48,7 @@
       </div>
 
     </div>
-  </section>
+  </div>
 
 
 

@@ -8,8 +8,8 @@
   <?php include("components/messages.php") ?>
 
 
-  <section class="containers">
-    <section class="column1">
+  <div class="containers">
+    <div class="column1">
       <div class="Introduction">
         <div class="Photo">
           <img src="../images/JFroche.jpg" />
@@ -30,8 +30,8 @@
         <i class="fa-brands fa-twitter fa-3x"></i><a href="#">JeanForterocheOF</a>
         <i class="fa-brands fa-tumblr fa-3x"></i><a href="#">Jean Forteroche</a>
       </div>
-    </section>
-    <section class="column2">
+    </div>
+    <div class="column2">
       <div class="ArticleBody">
         <div class="MainArticle">
 
@@ -62,14 +62,14 @@
             </div>
           <?php endforeach ?>
           </div>
-    </section>
-  </section>
+      </div>
+    </div>
 
 
 
 
 
-  <!-- Code injected by live-server -->
+    <!-- Code injected by live-server -->
 
 </body>
 
