@@ -15,7 +15,7 @@ class posts_model extends model
             $request = $this->db->prepare($query);
             $request->execute([$articleTitle, $articleText, $articleDate]);
         }
-        //véfirer l'insertion et renvoyer true
+        //check insertion
         if ($request->rowCount() == 1) {
             return true;
         } else {
@@ -26,7 +26,7 @@ class posts_model extends model
 
     public function getAllPosts()
     {
-        $query = "SELECT * FROM posts ORDER BY timestamp(date) desc LIMIT 5";
+        $query = "SELECT * FROM posts ORDER BY timestamp(date) desc ";
         $request = $this->db->prepare($query);
         $request->execute();
         $allPost = $request->fetchAll(PDO::FETCH_ASSOC);
@@ -45,8 +45,6 @@ class posts_model extends model
         $request->bindParam(":id", $id, PDO::PARAM_INT);
         $request->execute();
         $singlePost = $request->fetch(PDO::FETCH_ASSOC);
-
-        // $singlePost["message"] = htmlspecialchars_decode($singlePost["message"]);
 
         return $singlePost ? $singlePost : [];
     }

@@ -38,7 +38,7 @@
         tinymce.init({
             selector: 'tinymce-editor',
             setup: function(editor) {
-                editor.setContent('<?php echo $articleText; ?>');
+                editor.setContent(<?php echo $articleText; ?>);
             }
         });
     </script>

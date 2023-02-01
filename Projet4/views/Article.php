@@ -12,7 +12,7 @@
     <div class="column1">
       <div class="Introduction">
         <div class="Photo">
-          <img src="../images/JFroche.jpg" />
+          <img src="../images/JFroche.jpg" alt="JFrochePortrait">
         </div>
         <div class="Texte">
           <p>
@@ -38,9 +38,9 @@
 
           <div class="MainArticleText">
 
-            <p>
-              <?php echo htmlspecialchars_decode($singlePost['message']); ?>
-            </p>
+
+            <?php echo htmlspecialchars_decode($singlePost['message']); ?>
+
           </div>
         </div>
         <a href="index.php?action=add-comment&id=<?php echo $singlePost['id']; ?>" class="AddComment">Ajouter un commentaire</a>

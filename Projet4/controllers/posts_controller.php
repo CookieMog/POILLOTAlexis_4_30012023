@@ -35,18 +35,15 @@ function store_post()
 
 function edit_post()
 {
-    // On récupère l'ID du post
+    // grab post ID
     $id = isset($_GET['id']) ? (int) $_GET['id'] : 0;
     if ($id == 0) {
         header("Location: http://projet4git/index.php?action=admin");
     }
 
-    // On match le post et l'ID
+    // match post and ID
     $Post = new posts_model();
     $singlePost = $Post->getOnePostById($id);
-
-    //ERROR Si il y a pas d'post redirection vers dashboard
-
 
 
     require("./views/edit_post.php");

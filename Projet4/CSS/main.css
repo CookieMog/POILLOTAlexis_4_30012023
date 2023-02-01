@@ -263,13 +263,7 @@ header {
 .MainArticleText {
   margin: 5px;
 }
-.MainArticleText::first-letter {
-  font-family: auto;
-  font-size: 115px;
-  color: #261e1e;
-  padding: 0px 10px 0px 10px;
-  float: left;
-}
+
 .MainArticleText > p {
   margin: 15px;
 }

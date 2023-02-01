@@ -11,7 +11,7 @@
         <div class="column1">
             <div class="Introduction">
                 <div class="Photo">
-                    <img src="../images/JFroche.jpg" />
+                    <img src="../images/JFroche.jpg" alt="JFrochePortrait">
                 </div>
                 <div class="Texte">
                     <p>
@@ -52,7 +52,7 @@
 
         </div>
     </div>
-    </div>
+
 
     <script>
         let publishButton = document.getElementById('publishComment');

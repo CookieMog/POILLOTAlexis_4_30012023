@@ -4,11 +4,7 @@ function pageHome()
 
     $Post = new posts_model();
     $Posts = $Post->getAllPosts();
-    // $res = $_SESSION["PostsArray"];
-    // code
 
-    // View
-    echo getcwd();
     require("C:/wamp64/www/POILLOTAlexis_4_30012023/Projet4/views/home.php");
 }
 
