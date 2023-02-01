@@ -44,7 +44,7 @@
                         <input type="text" placeholder="" name="Author" id="title" required>
 
                         <label for="subject"><strong>Votre Commentaire:</strong></label>
-                        <textarea name="Subject" rows=5 cols=5></textarea>
+                        <textarea name="Subject" id="subject" rows=5 cols=5></textarea>
                     </div>
                     <button type="submit" id="publishComment">Envoyer</button>
                 </form>

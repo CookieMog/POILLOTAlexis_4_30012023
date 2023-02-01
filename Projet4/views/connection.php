@@ -15,9 +15,9 @@
         <hr>
         <div class="container">
           <label for="username"><strong>Utilisateur</strong></label>
-          <input type="email" placeholder="Votre-email" name="usermail" required>
+          <input type="email" placeholder="Votre-email" name="usermail" id="username" required>
           <label for="psw"><strong>Mot de Passe</strong></label>
-          <input type="password" placeholder="Mot de Passe" name="psw" required>
+          <input type="password" placeholder="Mot de Passe" name="psw" id="psw" required>
         </div>
         <button name="submit">Connexion</button>
         <div class="container-bottom">

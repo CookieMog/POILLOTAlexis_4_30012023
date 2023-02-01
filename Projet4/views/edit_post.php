@@ -21,9 +21,9 @@
                     <div class="Articlecontainer">
                         <label for="Title"><strong>Titre:</strong></label>
 
-                        <input type="text" placeholder="" name="Title" value=<?php $articleTitle ?>>
+                        <input type="text" id="Title" placeholder="Votre titre ici" name="Title" value=<?php $articleTitle ?>>
                         <label for="Subject"><strong>Votre Article:</strong></label>
-                        <tinymce-editor api-key="0ki8kh44dpr0iupw97fjo8e0x3vrccw5i082axf6oco1elwv" name="Subject" value=<?php echo $articleText ?>>
+                        <tinymce-editor api-key="0ki8kh44dpr0iupw97fjo8e0x3vrccw5i082axf6oco1elwv" name="Subject" id="Subject" value=<?php echo $articleText ?>>
                             <!--  <textarea name="Subject" rows=25 cols=150 value=<?php echo $articleText ?>></textarea> -->
                         </tinymce-editor>
                     </div>
