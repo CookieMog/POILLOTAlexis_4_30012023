@@ -1,6 +1,6 @@
 <?php
 
-require_once('C:\wamp64\www\POILLOTAlexis_4_30012023\Projet4\models\user_model.php');
+require_once('./models/user_model.php');
 function connexion()
 {
     // "admintestpass"

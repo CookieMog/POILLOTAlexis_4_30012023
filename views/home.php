@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include("components/head.php") ?>
+<?php include("./views/components/head.php") ?>
 
 <body>
-  <?php include("components/header.php") ?>
+  <?php include("./views/components/header.php") ?>
   <div class="containers">
     <div class="column1">
       <div class="Introduction">
         <div class="Photo">
-          <img src="../images/JFroche.jpg" alt="JFrochePortrait">
+          <img src="./images/JFroche.jpg" alt="JFrochePortrait">
         </div>
         <div class="Texte">
           <p>

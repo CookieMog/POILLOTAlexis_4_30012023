@@ -2,7 +2,7 @@
     <div id="TopBar">
 
         <div class="Name">
-            <img src="../images/JeanForeterocheCalligraphy4.png" alt="BannerName">
+            <img src="./images/JeanForeterocheCalligraphy4.png" alt="BannerName">
         </div>
         <ul class="menu">
             <li>

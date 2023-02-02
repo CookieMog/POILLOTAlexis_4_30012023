@@ -45,6 +45,7 @@ function edit_post()
     $Post = new posts_model();
     $singlePost = $Post->getOnePostById($id);
 
+    // var_dump($singlePost);
 
     require("./views/edit_post.php");
 }
