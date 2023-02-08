@@ -39,7 +39,20 @@
       </div>
     </div>
   </div>
+  <script>
+    let deleteButton = document.querySelectorAll('.Delete');
 
+    for (let i = 0; i < deleteButton.length; i++) {
+      deleteButton[i].addEventListener('click', (e) => {
+        if (confirm("Souhaitez-vous réellement supprimer ce commentaire ?")) {
+          window.location.href = e.target.firstElementChild.getAttribute('href');
+        } else {
+          e.preventDefault();
+        }
+      });
+
+    }
+  </script>
 </body>
 
 </html>
