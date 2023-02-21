@@ -480,7 +480,6 @@ span.admin {
   font-family: sans-serif;
 }
 .NewArticle button {
-  top: 35%;
   background-color: #1877f2;
   color: white;
   padding: 14px 0;
@@ -931,5 +930,8 @@ form button:hover {
   .Signal > a {
     left: 60%;
     bottom: 5px;
+  }
+  .Commentaires {
+    margin-left: 5px;
   }
 }

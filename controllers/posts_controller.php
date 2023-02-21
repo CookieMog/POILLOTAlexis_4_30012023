@@ -45,7 +45,8 @@ function edit_post()
     $Post = new posts_model();
     $singlePost = $Post->getOnePostById($id);
 
-    // var_dump($singlePost);
+
+
 
     require("./views/edit_post.php");
 }
@@ -57,17 +58,23 @@ function update_post()
 
     if (isset($_POST) && !empty($_POST)) {
 
-        $id = htmlspecialchars($_POST['id']);
-        $titre = htmlspecialchars($_POST['titre']);
-        $message = htmlspecialchars($_POST['message']);
-        $date = htmlspecialchars($_POST['date']);
+        /* var_dump($_POST); */
+
+        // $id = htmlspecialchars($_POST['id']);
+        // $titre = htmlspecialchars($_POST['titre']);
+        // $message = htmlspecialchars($_POST['message']);
+        $id = ($_POST['id']);
+        $titre = ($_POST['titre']);
+        $message = ($_POST['message']);
+
+
         $Post = new posts_model();
-        $res = $Post->updatePostById($id, $titre, $message, $date);
+        $res = $Post->updatePostById($id, $titre, $message);
 
 
         if ($res) {
             $_SESSION['success'] = "Modification enregistrée.";
-            header("Location: http://projet4git/index.php?action=article&id=$id]");
+            header("Location: http://projet4git/index.php?action=edit-post&id=$id");
         } else {
             $_SESSION['error'] = "Un problème est survenu.";
             header("Location: http://projet4git/index.php?action=admin");
