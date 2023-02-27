@@ -21,7 +21,7 @@ function store_post()
 
         $Post = new posts_model();
         $res = $Post->post($_POST);
-        var_dump($Post);
+
 
         if ($res) {
             header("Location: http://projet4git/index.php?action=add-post");
@@ -60,9 +60,7 @@ function update_post()
 
         /* var_dump($_POST); */
 
-        // $id = htmlspecialchars($_POST['id']);
-        // $titre = htmlspecialchars($_POST['titre']);
-        // $message = htmlspecialchars($_POST['message']);
+
         $id = ($_POST['id']);
         $titre = ($_POST['titre']);
         $message = ($_POST['message']);
@@ -89,7 +87,7 @@ function delete_post()
     if ($id == 0) {
         header("Location: http://projet4git/index.php?action=admin");
     }
-    var_dump($id);
+
 
     $Post = new posts_model();
     $res = $Post->deletePostById($id);

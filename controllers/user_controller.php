@@ -3,7 +3,7 @@
 require_once('./models/user_model.php');
 function connexion()
 {
-    // "admintestpass"
+
 
     if (isset($_POST) && !empty($_POST)) {
 

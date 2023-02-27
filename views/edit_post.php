@@ -29,7 +29,7 @@
                         <input type="hidden" name="id" value="<?php echo $singlePost['id'] ?>">
                     </div>
 
-                    <button type="submit">Publier</button>
+                    <button type="submit" id="editbutton">Publier</button>
                 </form>
 
             </div>

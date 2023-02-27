@@ -63,6 +63,6 @@ function article()
     $Comments = $comment->getAllCommentsByPostId($id);
 
     // Creation des url pour les posts
-    $Post->getAllPosts();
+    /* $Post->getAllPosts(); */
     require("./views/Article.php");
 }
